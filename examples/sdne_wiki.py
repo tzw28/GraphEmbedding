@@ -52,3 +52,4 @@ if __name__ == "__main__":
 
     evaluate_embeddings(embeddings)
     plot_embeddings(embeddings)
+

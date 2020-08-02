@@ -1,0 +1,4 @@
+python examples/node2vec_wiki.py
+python examples/line_wiki.py
+python examples/struc2vec_flight.py
+python examples/deepwalk_wiki.py

@@ -1,0 +1,197 @@
+[
+  {
+    "graph": "miserables",
+    "tests": [
+      {
+        "method": "node2vec",
+        "emb_params": {
+          "walk_length": 10,
+          "num_walks": 80,
+          "p": 4,
+          "q": 0.25,
+          "workers": 4,
+          "use_rejection_sampling": 1
+        },
+        "train_params": {
+          "window_size": 5,
+          "iter": 3
+        },
+        "layout_params": {
+          "k": 8
+        },
+        "emb_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7
+        },
+        "layout_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7,
+          "edge_width": 0.5,
+          "edge_alpha": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "graph": "facebook",
+    "tests": [
+      {
+        "method": "node2vec",
+        "emb_params": {
+          "walk_length": 10,
+          "num_walks": 80,
+          "p": 4,
+          "q": 0.25,
+          "workers": 4,
+          "use_rejection_sampling": 1
+        },
+        "train_params": {
+          "window_size": 5,
+          "iter": 3
+        },
+        "layout_params": {
+          "k": 8
+        },
+        "emb_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7
+        },
+        "layout_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7,
+          "edge_width": 0.5,
+          "edge_alpha": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "graph": "science",
+    "tests": [
+      {
+        "method": "node2vec",
+        "emb_params": {
+          "walk_length": 10,
+          "num_walks": 80,
+          "p": 4,
+          "q": 0.25,
+          "workers": 4,
+          "use_rejection_sampling": 1
+        },
+        "train_params": {
+          "window_size": 5,
+          "iter": 3
+        },
+        "layout_params": {
+          "k": 8
+        },
+        "emb_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7
+        },
+        "layout_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7,
+          "edge_width": 0.5,
+          "edge_alpha": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "graph": "cora",
+    "tests": [
+      {
+        "method": "node2vec",
+        "emb_params": {
+          "walk_length": 10,
+          "num_walks": 80,
+          "p": 4,
+          "q": 0.25,
+          "workers": 4,
+          "use_rejection_sampling": 1
+        },
+        "train_params": {
+          "window_size": 5,
+          "iter": 3
+        },
+        "layout_params": {
+          "k": 8
+        },
+        "emb_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7
+        },
+        "layout_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7,
+          "edge_width": 0.5,
+          "edge_alpha": 0.6
+        }
+      }
+    ]
+  },
+  {
+    "graph": "citeseer",
+    "tests": [
+      {
+        "method": "node2vec",
+        "emb_params": {
+          "walk_length": 10,
+          "num_walks": 80,
+          "p": 4,
+          "q": 0.25,
+          "workers": 4,
+          "use_rejection_sampling": 1
+        },
+        "train_params": {
+          "window_size": 5,
+          "iter": 3
+        },
+        "layout_params": {
+          "k": 8
+        },
+        "emb_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7
+        },
+        "layout_pic_params": {
+          "fig_size": 10,
+          "fig_gap": 0.05,
+          "node_size": 120,
+          "node_edge_color": "white",
+          "node_line_width": 0.7,
+          "edge_width": 0.5,
+          "edge_alpha": 0.6
+        }
+      }
+    ]
+  }
+]
