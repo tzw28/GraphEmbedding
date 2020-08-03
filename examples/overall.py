@@ -157,6 +157,8 @@ def run_single_test(emb_method, graph_name, save_path, emb_params, train_params,
         emb_end = time.time()
         emb_t = emb_end - emb_start
         time_record['fast_node2vec'] = round(emb_t, 3)
+    model_0 = emb(G, **emb_params)
+    model_0.train(**train_params)
     emb_start = time.time()
     emb = emb_method_dict[emb_method]
     model = emb(G, **emb_params)
