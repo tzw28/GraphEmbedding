@@ -127,9 +127,9 @@ def make_save_path():
 
 def fast_node2vec(G, return_weight, neighbor_weight):
     g2v = n2v(
-        n_components=128,
+        n_components=16,
         walklen=10,
-        epochs=80,
+        epochs=15,
         return_weight=return_weight,
         neighbor_weight=neighbor_weight,
         threads=4,

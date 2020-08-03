@@ -6,13 +6,14 @@
         "method": "node2vec",
         "emb_params": {
           "walk_length": 10,
-          "num_walks": 80,
+          "num_walks": 15,
           "p": 4,
           "q": 0.25,
           "workers": 4,
           "use_rejection_sampling": 1
         },
         "train_params": {
+          "embed_size": 16,
           "window_size": 5,
           "iter": 3
         },
@@ -45,13 +46,14 @@
         "method": "node2vec",
         "emb_params": {
           "walk_length": 10,
-          "num_walks": 80,
+          "num_walks": 15,
           "p": 4,
           "q": 0.25,
           "workers": 4,
           "use_rejection_sampling": 1
         },
         "train_params": {
+          "embed_size": 16,
           "window_size": 5,
           "iter": 3
         },
@@ -84,13 +86,14 @@
         "method": "node2vec",
         "emb_params": {
           "walk_length": 10,
-          "num_walks": 80,
+          "num_walks": 15,
           "p": 4,
           "q": 0.25,
           "workers": 4,
           "use_rejection_sampling": 1
         },
         "train_params": {
+          "embed_size": 16,
           "window_size": 5,
           "iter": 3
         },
@@ -123,13 +126,14 @@
         "method": "node2vec",
         "emb_params": {
           "walk_length": 10,
-          "num_walks": 80,
+          "num_walks": 15,
           "p": 4,
           "q": 0.25,
           "workers": 4,
           "use_rejection_sampling": 1
         },
         "train_params": {
+          "embed_size": 16,
           "window_size": 5,
           "iter": 3
         },
@@ -162,13 +166,14 @@
         "method": "node2vec",
         "emb_params": {
           "walk_length": 10,
-          "num_walks": 80,
+          "num_walks": 15,
           "p": 4,
           "q": 0.25,
           "workers": 4,
           "use_rejection_sampling": 1
         },
         "train_params": {
+          "embed_size": 16,
           "window_size": 5,
           "iter": 3
         },
