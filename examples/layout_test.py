@@ -14,6 +14,7 @@ from layout.graph_reading import (
 import datetime, json
 from layout.mean_shift import mean_shift, optics, dbscan
 from layout.emb_layout import generate_emb_adj_graph
+from layout.sgd import sgd, largest_connected_subgraph
 
 plt.switch_backend('agg') 
 
@@ -25,14 +26,17 @@ emb_method_dict = {
 }
 
 layout_method_dict = {
-    "circular_layout": nx.circular_layout,
+    # "circular_layout": nx.circular_layout,
     "kamada_kawai_layout": nx.kamada_kawai_layout,
-    "random_layout": nx.random_layout,
-    "shell_layout": nx.shell_layout,
-    "spring_layout": nx.spring_layout,
+    # "random_layout": nx.random_layout,
+    # "shell_layout": nx.shell_layout,
+    # "spring_layout": nx.spring_layout,
     #"spectral_layout": nx.spectral_layout,
     # "planar_layout": nx.planar_layout,
     "fruchterman_reingold_layout": nx.fruchterman_reingold_layout,
+    #"spectral_layout": nx.spectral_layout,
+    # "spiral_layout": nx.spiral_layout，
+    "sgd": sgd
 }
 
 reader_dict = {
@@ -107,6 +111,12 @@ def run_single_test(emb_method, graph_name, save_path, emb_params, train_params,
             layout1_save_path += str(param) + str(value) + "-"
         layout1_save_path = layout1_save_path[:-1] + "-{}.png"
         layout_pos_1 = layout(G)
+        if layout_method == "fruchterman_reingold_layout":
+            layout_pos_1 = layout(G, seed=(17))
+        elif layout_method == "spring_layout":
+            layout_pos_1 = layout(G, seed=5)
+        else:
+            layout_pos_1 = layout(G)
         draw_layout_pictures(G, layout_pos_1, cluster_color, label_color, layout1_save_path, layout_pic_params)
 
         '''
@@ -141,7 +151,12 @@ def run_single_test(emb_method, graph_name, save_path, emb_params, train_params,
         for param, value in layout_params.items():
             layout2_save_path += str(param) + str(value) + "-"
         layout2_save_path = layout2_save_path[:-1] + "-{}.png"
-        layout_pos_2 = layout(new_G)
+        if layout_method == "fruchterman_reingold_layout":
+            layout_pos_2 = layout(new_G, seed=(17))
+        elif layout_method == "spring_layout":
+            layout_pos_2 = layout(new_G, seed=5)
+        else:
+            layout_pos_2 = layout(new_G)
         draw_layout_pictures(G, layout_pos_2, cluster_color, label_color, layout2_save_path, layout_pic_params)
 
 
